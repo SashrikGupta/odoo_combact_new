@@ -32,6 +32,10 @@ const teacherSchema = new Schema({
       type: String,
     },
   ],
+  class: {
+    type: String,
+    required: true,
+  },
 });
 
 const Teacher = mongoose.model("Teacher", teacherSchema);
